@@ -1,0 +1,30 @@
+public class Student {
+    int studentId;
+    String studentName;
+    char grade;
+
+    public Student() {
+        this(0, "Unknown", 'N');
+    }
+
+    public Student(int studentId, String studentName, char grade) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.grade = grade;
+    }
+
+    public void displayInfo() {
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Grade: " + grade);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student(101, "Alice", 'A');
+
+        s1.displayInfo();
+        s2.displayInfo();
+    }
+}
