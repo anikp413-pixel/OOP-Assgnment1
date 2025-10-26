@@ -1,0 +1,24 @@
+public class Classroom {
+    String className;
+    String[] students;
+
+    public Classroom(String className, String[] students) {
+        this.className = className;
+        this.students = students;
+    }
+
+    public void displayInfo() {
+        System.out.println("Class Name: " + className);
+        System.out.print("Students: ");
+        for (String student : students) {
+            System.out.print(student + " ");
+        }
+        System.out.println("\n");
+    }
+
+    public static void main(String[] args) {
+        String[] studentList = {"Alice", "Bob", "Charlie"};
+        Classroom myClass = new Classroom("Math 101", studentList);
+        myClass.displayInfo();
+    }
+}
