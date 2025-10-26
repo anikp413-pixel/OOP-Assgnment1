@@ -1,0 +1,27 @@
+public class Point {
+    int xInt;
+    int yInt;
+    double xDouble;
+    double yDouble;
+
+    public Point(int x, int y) {
+        this.xInt = x;
+        this.yInt = y;
+        System.out.println("Integer Constructor:");
+        System.out.println("x = " + xInt + ", y = " + yInt);
+        System.out.println();
+    }
+
+    public Point(double x, double y) {
+        this.xDouble = x;
+        this.yDouble = y;
+        System.out.println("Double Constructor:");
+        System.out.println("x = " + xDouble + ", y = " + yDouble);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Point p1 = new Point(5, 10);
+        Point p2 = new Point(3.5, 7.2);
+    }
+}
